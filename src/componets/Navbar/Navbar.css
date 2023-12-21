@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.navbar .nav-logo .nav-img {
+  width: 140px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+
+
+.ticker-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.ticker-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ticker-item div {
+  display: flex;
+  align-items: center;
+}
+
+.ticker-item strong {
+  color: #1a73e8; /* Blue color for stock symbols */
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.ticker-item-description {
+  color: #555;
+}
+
+.ticker-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.ticker-details span {
+  color: #777;
+}
+
+/* Add a realistic market-themed color palette */
+.ticker-item {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.ticker-item:hover {
+  background-color: #f0f0f0;
+}
+
+.ticker-container {
+  background-color: #f5f5f5;
+}
+
+/* StockScreenersComponent.css */
+
+/* ... (previous styles) ... */
+
+.stock-item {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.stock-item:hover {
+  background-color: #e0e0e0;
+}
+
+.symbol {
+  font-weight: bold;
+  color: #333;
+}
+
+.name {
+  color: #555;
+}
+
+.price,
+.market-cap,
+.percent-change {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+

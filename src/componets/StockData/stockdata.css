@@ -1,0 +1,35 @@
+.market-section {
+  margin: 20px;
+}
+.hedaing-real {
+  margin: 20px 0px;
+  text-align: center;
+  background: #454545;
+  padding: 10px 0px;
+  color: white;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+}
+
+.market-table th,
+.market-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.market-table th {
+  background-color: #f4f4f4;
+}
+
+.market-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
